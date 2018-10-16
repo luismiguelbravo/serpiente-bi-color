@@ -102,7 +102,7 @@
 							ctx.clearRect(dir[0] * 10, dir[1] * 10, 10, 10);
 						}
 					} else if (!turn.length) {
-						//if (confirm("You lost! Play again? Your Score is " + score)) 
+						//if (confirm("You lost! Play again? Your Score is " + score))
 						{
 							ctx.clearRect(0, 0, 450, 300);
 							queue = [];
@@ -124,7 +124,7 @@
 						}*/
 					}
 				}
-				interval = window.setInterval(clock, 60);
+				interval = window.setInterval(clock, 120);
 				document.onkeydown = function(e) {
 					var code = e.keyCode - 37;
 					/*
@@ -140,7 +140,7 @@
 							window.clearInterval(interval);
 							interval = null;
 						} else {
-							interval = window.setInterval(clock, 60);
+							interval = window.setInterval(clock, 120);
 						}
 					} else { // O.o
 						dir = sum + code;
